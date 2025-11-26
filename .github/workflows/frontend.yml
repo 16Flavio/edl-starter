@@ -2,7 +2,10 @@ name: Frontend Tests
 
 on:
   push:
-    branches: [main, feature/test-branch-protection]
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_call:
 
 jobs:
   test:
